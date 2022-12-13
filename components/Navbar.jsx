@@ -11,7 +11,7 @@ const Navbar = () => (
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 fixed top-0 z-10`}
+    className={`${styles.xPaddings} py-8 relative`}
   >
     {/*container div for gradient side of navbar */}
     <div className="absolute w-[50%] inset-0 gradient-01" />
@@ -22,11 +22,11 @@ const Navbar = () => (
         alt="search"
         className="w-[24px] h-[24px] object-contain"
       /> */}
-      <a href="#about">
-        <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-          SHAD'S METAVERSUS
-        </h2>
-      </a>
+
+      <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
+        SHAD'S METAVERSUS
+      </h2>
+
       {/* <img
         src="/menu.svg"
         alt="menu"
